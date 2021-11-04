@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="505.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.hibernate.controller.StudentFormController">
+   <children>
+      <TableView fx:id="tblStudent" prefHeight="300.0" prefWidth="800.0">
+        <columns>
+          <TableColumn fx:id="colId" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="colName" prefWidth="184.0" text="Name" />
+            <TableColumn fx:id="colAddress" prefWidth="231.0" text="Address" />
+            <TableColumn fx:id="colContact" prefWidth="102.0" text="Contact" />
+            <TableColumn fx:id="colDob" prefWidth="121.0" text="Date of Birth" />
+            <TableColumn fx:id="colGender" prefWidth="86.0" text="Gender" />
+        </columns>
+      </TableView>
+      <TextField fx:id="txtId" layoutX="32.0" layoutY="318.0" promptText="ID" />
+      <TextField fx:id="txtAddress" layoutX="32.0" layoutY="377.0" promptText="Address" />
+      <TextField fx:id="txtName" layoutX="279.0" layoutY="318.0" promptText="Name" />
+      <TextField fx:id="txtContact" layoutX="279.0" layoutY="377.0" promptText="Contact" />
+      <TextField fx:id="txtGender" layoutX="279.0" layoutY="437.0" promptText="Gender" />
+      <TextField fx:id="txtDateOfBirth" layoutX="32.0" layoutY="437.0" promptText="Date Of Birth" />
+      <JFXButton buttonType="RAISED" layoutX="495.0" layoutY="318.0" onAction="#btnSaveOnAction" prefHeight="26.0" prefWidth="278.0" style="-fx-background-color: lightgreen; -fx-background-radius: 75;" text="Save">
+         <font>
+            <Font name="Ubuntu Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="495.0" layoutY="377.0" onAction="#btnUpdateOnAction" prefHeight="26.0" prefWidth="278.0" style="-fx-background-color: lightblue; -fx-background-radius: 75;" text="Update">
+         <font>
+            <Font name="Ubuntu Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="495.0" layoutY="437.0" onAction="#btnDeleteOnAction" prefHeight="26.0" prefWidth="278.0" style="-fx-background-color: lightpink; -fx-background-radius: 75;" text="Delete">
+         <font>
+            <Font name="Ubuntu Bold" size="14.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

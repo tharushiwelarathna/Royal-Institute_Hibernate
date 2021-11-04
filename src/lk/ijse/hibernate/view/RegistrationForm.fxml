@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="505.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.hibernate.controller.RegistrationFormController">
+   <children>
+      <TextField fx:id="txtStudentId" layoutX="261.0" layoutY="29.0" onAction="#txtStudentIdOnAction" prefHeight="38.0" prefWidth="337.0" promptText="Enter Student ID" />
+      <TextField fx:id="txtStudentName" editable="false" layoutX="454.0" layoutY="234.0" prefHeight="38.0" prefWidth="200.0" promptText="Student Name" />
+      <TextField fx:id="txtAddress" editable="false" layoutX="454.0" layoutY="296.0" prefHeight="38.0" prefWidth="200.0" promptText="Address" />
+      <TextField fx:id="txtRegistrationId" layoutX="454.0" layoutY="104.0" prefHeight="38.0" prefWidth="200.0" promptText="Register ID" />
+      <TextField fx:id="txtRegistrationFee" layoutX="454.0" layoutY="165.0" prefHeight="38.0" prefWidth="200.0" promptText="Register Fee" />
+      <ComboBox fx:id="cmbCourse" layoutX="454.0" layoutY="366.0" prefHeight="38.0" prefWidth="200.0" promptText="Courses" />
+      <JFXButton layoutX="275.0" layoutY="428.0" onAction="#btnRegisterOnAction" prefHeight="26.0" prefWidth="200.0" style="-fx-background-color: lightblue;" text="Register" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label layoutX="164.0" layoutY="104.0" prefHeight="38.0" prefWidth="175.0" text="Register ID">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="164.0" layoutY="165.0" prefHeight="38.0" prefWidth="175.0" text="Register Fee">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="164.0" layoutY="234.0" prefHeight="38.0" prefWidth="175.0" text="Student Name">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="164.0" layoutY="296.0" prefHeight="38.0" prefWidth="175.0" text="Address">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="164.0" layoutY="359.0" prefHeight="38.0" prefWidth="175.0" text="Course">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
